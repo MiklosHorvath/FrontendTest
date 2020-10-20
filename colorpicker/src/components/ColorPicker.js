@@ -12,10 +12,10 @@ const ColorPicker = () => {
         <Grid item xs={12}>
           <Grid container justify="center" spacing={4}>            
             { 
-            palettes.map((key, value) => (
+            palettes.map((value, key) => (
               
               <Grid key={key} item>
-                <Palette locationNumber={value} />
+                <Palette paletteInfo={value} />
               </Grid>
             ))}
           </Grid>
